@@ -1,7 +1,22 @@
 = s3b
 
-Description goes here.
+First cmd-line gem.
 
+sudo gem install jeweler
+git config --global github.user daneroo
+jeweler s3b
+
+bundle install
+bundle show
+
+rake version:write MAJOR=0 MINOR=1 PATCH=0
+rake gemspec
+
+rake install
+
+chmod +x bin/s3b
+
+modified : Rakefile:require 'rdoc/task', added rdoc to Gemfile
 == Contributing to s3b
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet

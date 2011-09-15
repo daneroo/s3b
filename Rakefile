@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "s3b"
   gem.homepage = "http://github.com/daneroo/s3b"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{s3b: bacup to S3 utility}
+  gem.description = %Q{Flexible s3 upload management for backup lifecycle}
   gem.email = "daniel.lauzon@gmail.com"
   gem.authors = ["Daniel Lauzon"]
   # dependencies defined in Gemfile
@@ -42,7 +42,7 @@ end
 
 task :default => :test
 
-require 'rake/rdoctask'
+require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
