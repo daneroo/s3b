@@ -1,3 +1,5 @@
+This file `README.md` hides the original (jewler generated) README.rdoc
+
 ## Requirements
 We chose to implement over the (fog)[http://fog.io/1.0.0/storage/] api to allow us to
 move easiliy to other providers later.
