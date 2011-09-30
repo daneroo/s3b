@@ -9,7 +9,7 @@ jeweler s3b
 bundle install
 bundle show
 
-rake version:write MAJOR=0 MINOR=1 PATCH=0
+rake version:write MAJOR=0 MINOR=2 PATCH=0
 rake gemspec
 
 rake install

@@ -1,5 +1,10 @@
 This file `README.md` hides the original (jewler generated) README.rdoc
 
+## Gemcutter
+
+    rake -T
+    rake gemcutter:release
+
 ## Requirements
 We chose to implement over the (fog)[http://fog.io/1.0.0/storage/] api to allow us to
 move easiliy to other providers later.
@@ -12,15 +17,14 @@ We want a simple utility to:
 *   restore a database from .tgz
 
 Usage
-```
-# Local operations
-s3b dump mongodb://localhost/<dbname>  <dump.tgz>
-s3b restore <dump.tgz> mongo:<dbname>
 
-# Simple S3 operations
-s3b store <filename> s3://<bucketname>/<key>
-s3b fetch s3://<bucketname>/<key> <filename>
-```
+    # Local operations
+    s3b dump mongodb://localhost/<dbname>  <dump.tgz>
+    s3b restore <dump.tgz> mongo:<dbname>
+
+    # Simple S3 operations
+    s3b store <filename> s3://<bucketname>/<key>
+    s3b fetch s3://<bucketname>/<key> <filename>
     
 ## Simple example
 Following the docs at (fog.io)[http://fog.io/1.0.0/storage/].
@@ -34,26 +38,3 @@ This is to test s3 storage with fog gem
 
     sudo gem install fog
     
-## javascript example from mongoose
-```javascript
-var Comments = new Schema({
-    title     : String
-  , body      : String
-  , date      : Date
-});
-
-var BlogPost = new Schema({
-    author    : ObjectId
-  , title     : String
-  , body      : String
-  , buf       : Buffer
-  , date      : Date
-  , comments  : [Comments]
-  , meta      : {
-      votes : Number
-	  , favs  : Number
-	}
-});
-
-var Post = mongoose.model('BlogPost', BlogPost);
-```

@@ -5,17 +5,18 @@
 
 Gem::Specification.new do |s|
   s.name = %q{s3b}
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Daniel Lauzon"]
-  s.date = %q{2011-09-15}
+  s.date = %q{2011-09-30}
   s.default_executable = %q{s3b}
   s.description = %q{Flexible s3 upload management for backup lifecycle}
   s.email = %q{daniel.lauzon@gmail.com}
   s.executables = ["s3b"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
+    "README.md",
     "README.rdoc"
   ]
   s.files = [
@@ -23,14 +24,17 @@ Gem::Specification.new do |s|
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
+    "README.md",
     "README.rdoc",
     "Rakefile",
     "VERSION",
     "bin/s3b",
     "lib/s3b.rb",
     "s3b.gemspec",
+    "simple.rb",
     "test/helper.rb",
-    "test/test_s3b.rb"
+    "test/test_s3b.rb",
+    "uri.rb"
   ]
   s.homepage = %q{http://github.com/daneroo/s3b}
   s.licenses = ["MIT"]
