@@ -12,14 +12,15 @@ We want a simple utility to:
 *   restore a database from .tgz
 
 Usage
+```
+# Local operations
+s3b dump mongodb://localhost/<dbname>  <dump.tgz>
+s3b restore <dump.tgz> mongo:<dbname>
 
-    # Local operations
-    s3b dump mongodb://localhost/<dbname>  <dump.tgz>
-    s3b restore <dump.tgz> mongo:<dbname>
-
-    # Simple S3 operations
-    s3b store <filename> s3://<bucketname>/<key>
-    s3b fetch s3://<bucketname>/<key> <filename>
+# Simple S3 operations
+s3b store <filename> s3://<bucketname>/<key>
+s3b fetch s3://<bucketname>/<key> <filename>
+```
     
 ## Simple example
 Following the docs at (fog.io)[http://fog.io/1.0.0/storage/].
