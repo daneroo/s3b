@@ -3,8 +3,10 @@ This file `README.md` hides the original (jewler generated) README.rdoc
 ## Gemcutter and Jeweler
 Useful tasks, see (Jeweler docs)[https://github.com/technicalpickles/jeweler]
     rake -T
+
+    rake release      # push and tag on github, push to rubygems.org
+    
     sudo rake install # install locally, may need to sudo
-    rake release
 
 ## Requirements
 We chose to implement over the (fog)[http://fog.io/1.0.0/storage/] api to allow us to

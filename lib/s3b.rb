@@ -1,7 +1,10 @@
 require 'rubygems'
 
+$:.unshift(File.dirname(__FILE__))
+require 's3b/uri'
+
 module S3b
-  VERSION = "0.1"
+  VERSION = "0.2.1"
   class Runner
     def initialize(args) 
       @args = args
