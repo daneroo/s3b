@@ -1,5 +1,11 @@
 This file `README.md` hides the original (jewler generated) README.rdoc
 
+## Duplication alert!
+
+Just found this: (https://github.com/meskyanichi/backup.git)[https://github.com/meskyanichi/backup.git]
+
+How about just do the url stuff, and handoff the produced config to backup!
+
 ## Gemcutter and Jeweler
 Useful tasks, see (Jeweler docs)[https://github.com/technicalpickles/jeweler]
     rake -T
