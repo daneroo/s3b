@@ -4,8 +4,8 @@ require 'fog'
 # create a connection
 connection = Fog::Storage.new({
   :provider                 => 'AWS',
-  :aws_secret_access_key    => 'EAFn9pcQzYMQ3dow8epruhx8NCw6pI8IEwtE8pBO',
-  :aws_access_key_id        => 'AKIAJ7ANZ5QOSX6KLQ6Q'
+  :aws_secret_access_key    => 'YOUR_SECRET_ACCESS_KEY',
+  :aws_access_key_id        => 'YOUR_ACCESS_KEY_ID'
 })
 
 # First, a place to contain the glorious details
